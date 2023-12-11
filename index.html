@@ -475,38 +475,29 @@
                         
                         <div class="col-lg-6 col-12">
                             <h2 class="mb-4"> Laissez-nous un <span>message</span></h2>
-
-                            <form class="contact-form me-lg-5 pe-lg-3" role="form" name="contact" method="POST" data-netlify="true">
+                            <form name="contact" method="POST" data-netlify="true">
                                 <input type="hidden" name="form-name" value="contact">
 
-                                <div class="form-floating">
-                                    <input type="text" name="name" id="name" class="form-control" placeholder="Full name" required>
-
-                                    <label for="name">Nom et prénom</label>
-                                </div>
-
-                                <div class="form-floating my-4">
-                                    <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email address" required>
-
-                                    <label for="email">Adresse e-mail</label>
-                                </div>
-                                
-                                <div class="form-floating my-4">
-                                    <input type="subject" name="subject" id="subject"class="form-control" placeholder="Subject" required>
-
-                                    <label for="subject">Sujet</label>
-                                </div>
-
-                                <div class="form-floating mb-4">
-                                    <textarea id="message" name="message" class="form-control" placeholder="Leave a comment here" required style="height: 160px"></textarea>
-
-                                    <label for="message">Votre message</label>
-                                </div>
-
-                                <div class="col-lg-5 col-6">
-                                    <button type="submit" class="form-control" style="padding: 0;">Envoyer</button>
-                                </div>
-                            </form>
+                                <p>
+                                  <label>Your Name: <input type="text" name="name" /></label>
+                                </p>
+                                <p>
+                                  <label>Your Email: <input type="email" name="email" /></label>
+                                </p>
+                                <p>
+                                  <label>Your Role: <select name="role[]" multiple>
+                                    <option value="leader">Leader</option>
+                                    <option value="follower">Follower</option>
+                                  </select></label>
+                                </p>
+                                <p>
+                                  <label>Message: <textarea name="message"></textarea></label>
+                                </p>
+                                <p>
+                                  <button type="submit">Send</button>
+                                </p>
+                              </form>
+                              
                         </div>
 
                         <div class="col-lg-6 col-12 mt-5 ms-auto">
