@@ -7,7 +7,7 @@
    }
 }
 .sliderPartner {
-    background: #f0f8ff;
+    background: #fff;
     height: 100px;
     margin: auto;
     overflow: hidden;
@@ -161,4 +161,11 @@
 }
 .slick-arrow.slick-hidden {
     display: none;
+}
+
+.imagePartner{
+    width: 150px; /* Set the desired width */
+    height: 100px; /* Set the desired height */
+    display: block; /* Prevents added space below inline-block images */
+    margin: 0 auto; /* Centers the image within its container */
 }
